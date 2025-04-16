@@ -22,23 +22,25 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/prestations-et-tarifs" element={<Prices />} />
-        <Route path='/prendre-rdv' element={<Booking />} />
-        <Route path='/a-propos' element={<About />} />
-        <Route path="/mentions-legales" element={<Legal />} />
-        <Route path="/plan-du-site" element={<SiteMap />} />
-        
-        <Route path="/administration/connexion" element={<Connection />} />
-        <Route path="/administration-mes-rdv" element={<HomeAdmin />} />
-        <Route path="/administration-mes-rdv/:id/view" element={<AppointmentItem />} />
-        <Route path="/administration-mes-rdv/:id/edit" element={<AppointmentEdit />} />
-        <Route path="/administration-mes-rdv/new" element={<AppointmentNew />} />
-        <Route path="/administration-mes-rdv/historique" element={<History />} />
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/prestations-et-tarifs" element={<Prices />} />
+          <Route path='/prendre-rdv' element={<Booking />} />
+          <Route path='/a-propos' element={<About />} />
+          <Route path="/mentions-legales" element={<Legal />} />
+          <Route path="/plan-du-site" element={<SiteMap />} />
+          
+          <Route path="/administration/connexion" element={<Connection />} />
+          <Route path="/administration-mes-rdv" element={<HomeAdmin />} />
+          <Route path="/administration-mes-rdv/:id/view" element={<AppointmentItem />} />
+          <Route path="/administration-mes-rdv/:id/edit" element={<AppointmentEdit />} />
+          <Route path="/administration-mes-rdv/new" element={<AppointmentNew />} />
+          <Route path="/administration-mes-rdv/historique" element={<History />} />
 
-        <Route path='*' element={<Error />} />
-      </Routes>
+          <Route path='*' element={<Error />} />
+        </Routes>
+      </div>
       <Footer />
     </Fragment>
     

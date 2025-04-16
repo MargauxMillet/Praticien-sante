@@ -1,0 +1,117 @@
+.footer-container {
+    background-color: var(--lightBeige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    margin-top: var(--MB);
+    /* z-index: 0; */
+}
+
+.footer-container .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-container .infos .rs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-container .infos .rs a {
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .insta-logo, .footer-container .fb-logo {
+    fill: var(--kaki);
+    /* transition: .3s; */
+}
+
+.footer-container .insta-logo:hover, .footer-container .insta-logo:focus, .footer-container .fb-logo:hover, .footer-container .fb-logo:focus {
+    fill: var(--accentBeige);
+    /* transition: .3s; */
+}
+
+.footer-container .infos p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--kaki);
+    line-height: 1.6em;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-container .phone-number {
+    letter-spacing: 10%;
+}
+
+.footer-container .links {
+    display: flex;
+}
+
+.footer-container .links a {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    margin: 0 26px;
+    /* transition: .3s; */
+}
+
+.footer-container .links a:hover, .footer-container .links a:focus {
+    text-decoration: underline;
+    /* transition: .3s; */
+}
+
+.footer-container .links a::after {
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--black);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -29px;
+}
+
+.footer-container .links a:last-of-type::after {
+    height: 0;
+    width: 0;
+}
+
+@media screen and (max-width: 520px) {
+    .footer-container {
+        gap: 30px;
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+    
+    .footer-container .infos {
+        gap: 10px;
+    }
+
+    .footer-container .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-container .links a::after {
+        height: 0;
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .footer-container .infos p .br::after {
+        display: inline;
+    }
+}
