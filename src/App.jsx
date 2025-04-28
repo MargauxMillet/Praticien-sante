@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { Fragment } from 'react'
+import { Fragment, useContext, useState } from 'react'
 
 import Home from "./pages/public/Home/index.jsx"
 import Prices from "./pages/public/Prices/index.jsx"
@@ -18,11 +18,18 @@ import Error from "./components/Error/index.jsx"
 import Header from "./components/Header/index.jsx"
 import Footer from "./components/Footer/index.jsx"
 
+import {  HeaderContext, WindowContext } from './context/index.jsx'
+
 function App() {
+  const { headerImg, mainRef } = useContext(HeaderContext)
+  const {windowWidth} = useContext(WindowContext)
+  
+  const marginTop = headerImg == '' ? '80px' : windowWidth > 500 ? '80vh' : '70vh'
+
   return (
     <Fragment>
       <Header />
-      <div className="main">
+      <div className="main" ref={mainRef} style={{marginTop: marginTop, backgroundColor: "white", position: "relative"}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/prestations-et-tarifs" element={<Prices />} />
@@ -43,7 +50,6 @@ function App() {
       </div>
       <Footer />
     </Fragment>
-    
   )
 }
 

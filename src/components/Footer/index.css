@@ -30,12 +30,12 @@
     align-items: center;
 }
 
-.footer-container .insta-logo, .footer-container .fb-logo {
+.footer-container .insta-icon, .footer-container .fb-icon {
     fill: var(--kaki);
     /* transition: .3s; */
 }
 
-.footer-container .insta-logo:hover, .footer-container .insta-logo:focus, .footer-container .fb-logo:hover, .footer-container .fb-logo:focus {
+.footer-container .insta-icon:hover, .footer-container .insta-icon:focus, .footer-container .fb-icon:hover, .footer-container .fb-icon:focus {
     fill: var(--accentBeige);
     /* transition: .3s; */
 }

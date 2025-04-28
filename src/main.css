@@ -63,6 +63,7 @@
 
 .main {
     flex: 1;
+    z-index: 1;
 }
 
 a {
@@ -83,6 +84,43 @@ p {
 
 p span {
     font-weight: 700;
+}
+
+.button {
+    padding: 15px 20px;
+    display: inline-block;
+    border: 1.5px solid var(--kaki);
+    border-radius: 40px;
+    line-height: 1em;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--kaki);
+    transition: .3s;
+}
+
+.button:hover, .button:focus {
+    color: var(--kaki);
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+
+.secondary-button {
+    padding: 15px 20px;
+    display: inline-block;
+    border: 1.5px solid var(--kaki);
+    border-radius: 40px;
+    line-height: 1em;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--kaki);
+    transition: .3s;
+}
+
+.secondary-button:hover, .secondary-button:focus {
+    background-color: var(--kaki);
+    color: var(--white);
+    transition: .3s;
 }
 
 .title {

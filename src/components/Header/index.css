@@ -1,0 +1,75 @@
+.hero-banner {
+    height: 80vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-size: cover;
+    z-index: 0;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--darkBeige), var(--white));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    position: fixed;
+    z-index: 2;
+    transition: .3s;
+}
+
+.hero-banner .header {
+    background: none;
+    top: 0;
+    transition: .3s;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    z-index: 2;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1600px) {
+    .header {
+        height: 90px; 
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .header {
+        height: 100px;
+        padding: 0 45px;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .header {
+        height: 110px;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        padding: 0 25px;
+    }
+}

@@ -1,0 +1,50 @@
+.header .logo {
+    width: 57px;
+    height: 27px;
+}
+
+.header .logo img {
+    height: 100%;
+    margin: auto;
+}
+
+.burger-menu-button {
+    stroke: var(--kaki);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.burger-menu-button:hover {
+    stroke: var(--accentBeige);
+    transition: .3s;
+}
+
+@media screen and (min-width: 1600px) {
+    .header .logo {
+        width: 63px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .header .logo {
+        width: 69px;
+        height: 33px;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .header .logo {
+        width: 81px;
+        height: 36px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header .logo {
+        width: 50px;
+        height: 24px;
+    }
+}

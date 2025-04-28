@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--kaki);
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a:focus{
+    color: var(--accentBeige);
+    transition: .3s;
+}
+
+.burger-menu .navbar {
+    flex-direction: column;
+}
+
+.burger-menu .navbar a {
+    font-size: 22px;
+}
+
+@media screen and (min-width: 1600px) {
+    .navbar {
+        gap: 50px;
+    }
+    
+    .navbar a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .navbar {
+        gap: 55px;
+    }
+    
+    .navbar a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .navbar {
+        gap: 65px;
+    }
+    
+    .navbar a {
+        font-size: 26px;
+    }
+}
