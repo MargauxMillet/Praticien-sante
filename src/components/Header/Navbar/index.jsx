@@ -1,10 +1,10 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useContext } from "react"
 import { BurgerMenuContext } from "../../../context"
-import "./index.css"
+import style from "./index.module.css"
 
 function Navbar () {
-    const { setBurgerMenuOpen } = useContext(BurgerMenuContext)
+    const { setBurgerMenuOpen, isBurgerMenuOpen } = useContext(BurgerMenuContext)
     
     function LinkTo (event, url) {
         event.preventDefault()
@@ -13,7 +13,7 @@ function Navbar () {
     }
 
     return (
-        <div className="navbar">
+        <div className={`${style.navbar} ${isBurgerMenuOpen ? style.navbarBurgerMenu : ''}`}>
             <Link to="/" onClick={(event)=> LinkTo("/")}>Accueil</Link>
             <Link to="/prestations-et-tarifs" onClick={(event)=> LinkTo("/prestations-et-tarifs")}>Prestations et tarifs</Link>
             <Link to="/a-propos" onClick={(event)=> LinkTo("/a-propos")}>À propos</Link>

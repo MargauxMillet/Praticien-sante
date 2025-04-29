@@ -4,7 +4,7 @@ import { BurgerMenuContext, HeaderContext } from "../../context"
 import BurgerMenu from "./BurgerMenu"
 import HeaderBar from "./HeaderBar"
 
-import "./index.css"
+import style from "./index.module.css"
 
 function Header() {
     const { headerImgSource, headerHero, headerTop } = useContext(HeaderContext)
@@ -13,22 +13,22 @@ function Header() {
     return (
         <Fragment>
             {headerHero && 
-                <header className="hero-banner" style={{backgroundImage: `url(${headerImgSource})`}}>
-                    <div className="header">
+                <header className={style.heroBanner} style={{backgroundImage: `url(${headerImgSource})`}}>
+                    <div className={style.header}>
                         <HeaderBar />
                     </div>
                 </header>
             }
 
             { !headerHero && 
-                <header className="header" style={{top: headerTop}}>
+                <header className={style.header} style={{top: headerTop}}>
                     <HeaderBar /> 
                 </header>
             } 
 
             {isBurgerMenuOpen && 
                 <Fragment>
-                    <div onClick={()=>setBurgerMenuOpen(false)} className="overlay"></div>
+                    <div onClick={()=>setBurgerMenuOpen(false)} className={style.overlay}></div>
                     <BurgerMenu />
                 </Fragment>
             }

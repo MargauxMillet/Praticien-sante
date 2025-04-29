@@ -16,11 +16,11 @@
     transition: .3s;
 }
 
-.burger-menu .navbar {
+.navbarBurgerMenu {
     flex-direction: column;
 }
 
-.burger-menu .navbar a {
+.navbarBurgerMenu a {
     font-size: 22px;
 }
 

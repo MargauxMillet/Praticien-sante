@@ -3,7 +3,7 @@ import { HeaderContext, WindowContext } from '../../context'
 
 import whiteBackgroundWave from '../../assets/whiteBackgroundWave.svg'
 import beigeBackgroundWave from '../../assets/beigeBackgroundWave.svg'
-import './index.css'
+import style from './index.module.css'
 
 function PageTitleWave ({title, subtitle = null}) {
     const { headerColor } = useContext(HeaderContext)
@@ -32,11 +32,11 @@ function PageTitleWave ({title, subtitle = null}) {
     }, [windowWidth])
 
     return (
-        <div className='page-title-container' style={{height: backgroundWaveHeight}}>
-            <div className='background-wave' style={{height: backgroundWaveHeight}} ><img src={backgroundWave} alt=""/></div>
-            <div className='title-container' ref={titleContainerRef}>
-                <p className='title'>{title}</p>
-                {subtitle && <p className='subtitle'>{subtitle}</p>}
+        <div className={style.pageTitleContainer} style={{height: backgroundWaveHeight}}>
+            <div className={style.backgroundWave} style={{height: backgroundWaveHeight}} ><img src={backgroundWave} alt=""/></div>
+            <div className={style.titleContainer} ref={titleContainerRef}>
+                <p className={style.title}>{title}</p>
+                {subtitle && <p className={style.subtitle}>{subtitle}</p>}
             </div>
         </div> 
     )

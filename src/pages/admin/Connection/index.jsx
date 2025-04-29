@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { Fragment, useContext, useEffect } from "react"
 import { HeaderContext } from "../../../context"
 
 function Connection() {

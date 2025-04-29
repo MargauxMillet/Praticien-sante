@@ -1,6 +1,10 @@
 import { Fragment, useContext, useEffect } from "react"
 import { HeaderContext } from "../../../context"
 import PageTitleWave from "../../../components/PageTitleWave";
+import { Link } from "react-router-dom";
+import portrait from "../../../assets/portrait.jpg"
+
+import style from './index.module.css'
 
 function Home() {
     const { setHeaderImg, headerColor, setHeaderColor } = useContext(HeaderContext)

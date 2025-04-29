@@ -1,4 +1,4 @@
-.hero-banner {
+.heroBanner {
     height: 80vh;
     width: 100%;
     position: fixed;
@@ -20,7 +20,7 @@
     transition: .3s;
 }
 
-.hero-banner .header {
+.heroBanner .header {
     background: none;
     top: 0;
     transition: .3s;
