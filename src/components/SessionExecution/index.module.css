@@ -1,0 +1,381 @@
+.sessionExecutionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--MM);
+}
+
+.sessionExecutionTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 80%;
+}
+
+.sessionExecutionInfos {
+    display: flex;
+    gap: 130px;
+}
+
+.sessionExecutionInfos > .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sessionExecutionInfos > p {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 5%;
+    color: var(--darkBeige);
+    margin: auto 0;
+}
+
+.item .icon {
+    width: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.item .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 208px;
+}
+
+.item .infos p {
+    line-height: 1.5em;
+}
+
+.item .infos .title {
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: 5%;
+}
+
+@media screen and (max-width: 1340px) {
+    .sessionExecutionInfos > p {
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .sessionExecutionInfos {
+        gap: 100px;
+    }
+
+    .sessionExecutionInfos > p {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .sessionExecutionInfos {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sessionExecutionInfos {
+        gap: 60px;
+    }
+
+    .sessionExecutionInfos > .item {
+        gap: 27px;
+    }
+
+    .item .icon {
+        width: 27px;
+        height: 31.5px;
+    }
+
+    .item .infos {
+        gap: 12px;
+        width: 190px;
+    }
+
+    .item .infos p {
+        font-size: 14px;
+    }
+
+    .item .infos .title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sessionExecutionInfos {
+        gap: 40px;
+    }
+
+    .sessionExecutionInfos > .item {
+        gap: 24px;
+    }
+
+    .item .icon {
+        width: 24px;
+        height: 28px;
+    }
+
+    .item .infos {
+        gap: 9px;
+        width: 170px;
+    }
+
+    .item .infos p {
+        font-size: 12px;
+    }
+
+    .item .infos .title {
+        font-size: 16px;
+    }
+
+    .sessionExecutionInfos > p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sessionExecutionInfos {
+        gap: 30px;
+    }
+
+    .sessionExecutionInfos > .item {
+        gap: 21px;
+    }
+
+    .sessionExecutionInfos > p {
+        font-size: 21px;
+    }
+
+    .item .icon {
+        width: 18px;
+        height: 24px;
+    }
+
+    .item .infos {
+        gap: 6px;
+        width: 150px;
+    }
+
+    .item .infos .title {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sessionExecutionInfos > .item {
+        gap: 18px;
+    }
+
+    .item .infos {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .sessionExecutionInfos {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .item .infos {
+        width: 100px;
+    }
+}
+
+
+.doubleSectionContainer {
+    width: 1100px;
+}
+
+.doubleSectionContainer .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.doubleSectionContainer .contentContainerReverse {
+    flex-direction: row-reverse;
+}
+
+.contentContainer .infos, .contentContainer .video {
+    width: 50%;
+}
+
+.contentContainer .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.infos .item {
+    width: 100%;
+    background-color: var(--lightBeige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 25px;
+    gap: 15px;
+}
+
+.item .title {
+    line-height: 1.4em;
+    font-weight: 600;
+    letter-spacing: 5%;
+    text-align: center;
+}
+
+.item .desc {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    letter-spacing: 5%;
+}
+
+.contentContainer .video {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contentContainerReverse .video {
+    justify-content: flex-start;
+}
+
+.contentContainer .video video {
+    width: 90%;
+    height: 590px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1340px) {
+    .doubleSectionContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .doubleSectionContainer .contentContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    .contentContainer .infos {
+        width: 100%;
+    }
+
+    .contentContainer .video {
+        width: 70%;
+    }
+
+    .contentContainer .video video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contentContainer .video {
+        width: 80%;
+    }
+
+    .contentContainer .video video {
+        height: 650px;
+        border-radius: 22px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .doubleSectionContainer .contentContainer {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .contentContainer .infos {
+        gap: 16px;
+    }
+
+    .infos .item {
+        gap: 12px;
+    }
+
+    .contentContainer .video video {
+        height: 600px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contentContainer .video video {
+        height: 550px;
+        border-radius: 18px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .contentContainer .video video {
+        height: 500px;
+        border-radius: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .doubleSectionContainer .contentContainer {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contentContainer .infos {
+        gap: 12px;
+    }
+
+    .infos .item {
+        gap: 9px;
+    }
+
+    .item .title {
+        font-size: 14px;
+    }
+
+    .item .desc {
+        font-size: 14px;
+    }
+
+    .contentContainer .video {
+        width: 90%;
+    }
+
+    .contentContainer .video video {
+        height: 450px;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contentContainer .video video {
+        height: 400px;
+        border-radius: 14px;
+    }
+}

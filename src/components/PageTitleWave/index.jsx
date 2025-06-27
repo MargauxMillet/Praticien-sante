@@ -35,8 +35,8 @@ function PageTitleWave ({title, subtitle = null}) {
         <div className={style.pageTitleContainer} style={{height: backgroundWaveHeight}}>
             <div className={style.backgroundWave} style={{height: backgroundWaveHeight}} ><img src={backgroundWave} alt=""/></div>
             <div className={style.titleContainer} ref={titleContainerRef}>
-                <p className={style.title}>{title}</p>
-                {subtitle && <p className={style.subtitle}>{subtitle}</p>}
+                <h1 className={style.title}>{title}</h1>
+                {subtitle && <h2 className={style.subtitle}>{subtitle}</h2>}
             </div>
         </div> 
     )

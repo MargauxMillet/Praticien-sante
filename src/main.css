@@ -8,41 +8,55 @@
     --red: #C44646;
 
     --MB: 150px;
+    --MM: 110px;
+    --MS: 70px;
 }
 
 @media screen and (max-width: 1300px) {
     :root {
         --MB: 135px;
+        --MM: 100px;
+        --MS: 65px;
     }
 }
 
 @media screen and (max-width: 1150px) {
     :root {
         --MB: 120px;
+        --MM: 90px;
+        --MS: 60px;
     }
 }
 
 @media screen and (max-width: 1000px) {
     :root {
         --MB: 105px;
+        --MM: 80px;
+        --MS: 55px;
     }
 }
 
 @media screen and (max-width: 850px) {
     :root {
         --MB: 90px;
+        --MM: 70px;
+        --MS: 50px;
     }
 }
 
 @media screen and (max-width: 600px) {
     :root {
         --MB: 75px;
+        --MM: 60px;
+        --MS: 45px;
     }
 }
 
 @media screen and (max-width: 450px) {
     :root {
         --MB: 60px;
+        --MM: 50px;
+        --MS: 40px;
     }
 }
 
@@ -68,6 +82,10 @@
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
 }
 
 .br::after {
@@ -96,6 +114,7 @@ p span {
     font-weight: 500;
     color: var(--white);
     background-color: var(--kaki);
+    cursor: pointer;
     transition: .3s;
 }
 
@@ -137,9 +156,38 @@ p span {
     font-weight: 600;
     line-height: 1.4em;
     letter-spacing: 5%;
-    margin-top: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    .title {
+        font-size: 27px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .title {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+    }
 }
 
 .bloc {
-    margin: 150px auto;
+    margin: var(--MB) auto;
+}
+
+.seeMoreButton {
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
 }

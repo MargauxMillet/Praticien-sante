@@ -1,0 +1,42 @@
+[
+    {
+        "name" : "Muriel de B.",
+        "score" : 5,
+        "review" : "Très bon contact et très bonnes séances avec ce praticien . Consulté pour me permettre d'évacuer mon stress et il m'a bien aidé à me détendre."
+    },
+    {
+        "name" : "Thierry D.",
+        "score" : 4,
+        "review" : "Je souffrais d une douleur récurrente au genou gauche depuis plusieurs années. Sur les conseils d un ami, j ai pris rdv avec Mr canonico. Après 3 séances la douleur a presque totalement disparu. Je ne connaissais pas ce type de thérapie et suis époustouflé par les résultats. Je recommande."
+    },
+    {
+        "name" : "Valérie G.",
+        "score" : 5,
+        "review" : "Consultation agréable. Suite migraine, Praticien consciencieux et a l ecoute"
+    },
+    {
+        "name" : "Marouane B.",
+        "score" : 5,
+        "review" : "C’était ma première découverte de la sophrologie et de la réflexologie, et j’ai vraiment ressenti la passion de Michel dans sa manière de transmettre. J’ai beaucoup apprécié les explications claires à chaque étape ! Dans le cadre de ma préparation au semi-marathon de Nice, j’ai intégré 1 à 2 séances par semaine avec lui, ce qui m’a beaucoup aidé à mieux gérer mon souffle et à relâcher les tensions musculaires. Un grand merci à toi Michel pour ton déplacement et ton accompagnement précieux !"
+    },
+    {
+        "name" : "Charlotte C.",
+        "score" : 5,
+        "review" : "J’ai vu Michel après un épisode très stressant, et la séance m’a énormément détendue pendant et après. Les bénéfices ont vraiment été importants ! Merci Michel pour cette gentillesse et disponibilité !"
+    },
+    {
+        "name" : "Ahmed O.",
+        "score" : 5,
+        "review" : "J'ai récemment eu le plaisir de participer à une séance de réflexologie avec Michel, et je suis extrêmement satisfait de cette expérience. Non seulement Michel a un haut niveau de professionnalisme et de connaissance dans sa pratique, mais il a également sû me mettre à l'aise en créant une ambiance accueillante et chaleureuse, afin que je puisse bien profiter de ma séance à 100%. Je recommande vivement !!"
+    },
+    {
+        "name" : "Isabelle B.",
+        "score" : 5,
+        "review" : "Les résultats de la séance ont été au delà de mes attentes. M. Michel Canonico est une personne bienveillante qui a pris le temps d'écouter mes besoins. Sa technique très professionnelle m'a mise en confiance.  J'ai pu apprécier les bienfaits de la séance aussi bien pendant que les jours suivants. Je recommande vivement ce praticien et n'hésiterai pas à le consulter régulièrement."
+    },
+    {
+        "name" : "Guillaume R.",
+        "score" : 5,
+        "review" : "Michel m'a beaucoup aidé j'avais des problèmes de sommeil et des douleurs musculaires à la fin de la première séance j'ai vu déjà une évolution dans mes problèmes"
+    }
+]

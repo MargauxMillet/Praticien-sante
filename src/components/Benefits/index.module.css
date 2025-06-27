@@ -1,0 +1,180 @@
+.benefitsContainer {
+    width: 100%;
+    background-color: var(--lightBeige);
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--MS);
+    align-items: center;
+}
+
+.benefitsContainer h3 {
+    text-align: center;
+}
+
+.benefitsAll {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+}
+
+.benefitsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.benefitsItem > div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefitsItem img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.benefitsItem p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    width: 145px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1380px) {
+    .benefitsAll {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .benefitsContainer {
+        padding: 80px 0;
+    }
+
+    .benefitsItem {
+        gap: 22px;
+    }
+    
+    .benefitsItem > div {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .benefitsAll {
+        gap: 75px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .benefitsAll {
+        gap: 60px;
+    }
+    
+    .benefitsItem {
+        gap: 19px;
+    }
+    
+    .benefitsItem > div {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .benefitsAll {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    
+    .benefitsItem {
+        gap: 16px;
+        margin: 0 15px;
+    }
+    
+    .benefitsItem > div {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .benefitsItem {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .benefitsAll {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .benefitsItem {
+        gap: 13px;
+    }
+    
+    .benefitsItem > div {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .benefitsItem p {
+        font-size: 14px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .benefitsAll {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .benefitsContainer {
+        padding: 75px 0;
+    }
+
+    .benefitsAll {
+        gap: 50px;
+        width: 80%;
+    }
+    
+    .benefitsItem {
+        gap: 10px;
+    }
+    
+    .benefitsItem > div  {
+        height: 28px;
+        width: 28px;
+    }
+
+    .benefitsItem p  {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .benefitsContainer {
+        padding: 60px 0;
+    }
+
+    .benefitsAll {
+        gap: 30px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .benefitsAll {
+        width: 90%;
+    }
+}

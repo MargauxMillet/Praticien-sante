@@ -24,7 +24,7 @@ function App() {
   const { headerImg, mainRef } = useContext(HeaderContext)
   const {windowWidth} = useContext(WindowContext)
   
-  const marginTop = headerImg == '' ? '80px' : windowWidth > 500 ? '80vh' : '70vh'
+  const marginTop = headerImg == '' ? '80px' : windowWidth > 500 ? '65vh' : '55vh'
 
   return (
     <Fragment>

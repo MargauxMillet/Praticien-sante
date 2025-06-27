@@ -1,0 +1,62 @@
+.separatorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.separatorLine {
+    background-color: var(--darkBeige);
+    height: 2px;
+    width: 200px;
+}
+
+.separatorCircle {
+    background-color: var(--darkBeige);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 1600px) {
+    .separatorLine {
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .separatorLine {
+        width: 338px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .separatorContainer {
+        padding: 30px 0;
+    }
+    .separatorLine {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .separatorLine {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .separatorContainer {
+        gap: 8px;
+    }
+    
+    .separatorLine {
+        width: 80px;
+    }
+    
+    .separatorCircle {
+        height: 6px;
+        width: 6px;
+    }
+}
+

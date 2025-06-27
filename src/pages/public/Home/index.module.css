@@ -1,3 +1,245 @@
-.test {
-    color: green;
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding-top: 50px;
+    padding-bottom: var(--MM);
+    position: relative;
+}
+
+.intro .pres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.intro .pres img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro .description {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro .description p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+}
+
+.intro .infos {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    margin-bottom: var(--MM);
+}
+
+.intro .infos .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro .infos .item p {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 10%;
+    color: var(--kaki);
+}
+
+.intro .wave {
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+}
+
+.intro .wave img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1600px) {
+    .intro {
+        gap: 77px;
+        padding-top: 55px;
+        padding-bottom: 120px;
+    }
+
+    .intro .infos {
+        margin-bottom: 120px;
+    }
+    
+    .intro .pres {
+        gap: 55px;
+    }
+    
+    .intro .pres img {
+        height: 185px;
+        width: 185px;
+    }
+    
+    .intro .description {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .intro {
+        gap: 84px;
+        padding-top: 60px;
+        padding-bottom: 130px;
+    }
+
+    .intro .infos {
+        margin-bottom: 130px;
+    }
+    
+    .intro .pres {
+        gap: 60px;
+    }
+    
+    .intro .pres img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .intro .description {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .intro {
+        gap: 98px;
+        padding-top: 70px;
+        padding-bottom: 150px;
+    }
+
+    .intro .infos {
+        margin-bottom: 150px;
+    }
+    
+    .intro .pres {
+        gap: 70px;
+    }
+    
+    .intro .pres img {
+        height: 230px;
+        width: 230px;
+    }
+    
+    .intro .description {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .intro {
+        gap: 63px;
+        padding-top: 45px;
+    }
+    
+    .intro .pres {
+        gap: 45px;
+    }
+    
+    .intro .pres img {
+        height: 155px;
+        width: 155px;
+    }
+    
+    .intro .description {
+        width: 80%;
+    }
+
+    .intro .infos {
+        gap: 180px;
+    }
+    
+    .intro .infos .item {
+        gap: 18px;
+    }
+
+    .infosIcon {
+        height: 35px;
+    }
+    
+    .intro .infos .item p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro {
+        gap: 56px;
+        padding-top: 40px;
+    }
+    
+    .intro .pres {
+        gap: 40px;
+    }
+    
+    .intro .pres img {
+        height: 135px;
+        width: 135px;
+    }
+    
+    .intro .description {
+        width: 85%;
+    }
+
+    .intro .infos {
+        gap: 160px;
+    }
+    
+    .intro .infos .item {
+        gap: 16px;
+    }
+
+    .infosIcon {
+        height: 30px;
+    }
+    
+    .intro .infos .item p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .intro {
+        gap: 49px;
+        padding-top: 35px;
+    }
+    
+    .intro .pres {
+        gap: 35px;
+    }
+
+    .intro .infos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro {
+        gap: 42px;
+        padding-top: 30px;
+    }
+    
+    .intro .pres {
+        gap: 30px;
+    }
 }
