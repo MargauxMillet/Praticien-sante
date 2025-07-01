@@ -1,0 +1,200 @@
+.intro {
+    padding-top: var(--MS);
+}
+
+.intro > p {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: var(--MM) !important;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item p {
+    color: var(--kaki);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .contact {
+        gap: 27px;
+    }
+
+    .item {
+        gap: 18px;
+    }
+
+    .itemPhone img {
+        height: 35px;
+    }
+
+    .itemEmail img {
+        height: 28px;
+    }
+
+    .item p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro > p {
+        width: 85%;
+    }
+
+    .contact {
+        gap: 24px;
+    }
+
+    .item {
+        gap: 16px;
+    }
+
+    .itemPhone img {
+        height: 33px;
+    }
+
+    .itemEmail img {
+        height: 26px;
+    }
+
+    .item p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact {
+        gap: 35px;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item p {
+        line-height: 1.5em;
+    }
+
+    .br::after {
+        display: inline !important;
+    }
+}
+
+.education, .socialMedias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    width: 75%;
+}
+
+.titleContainer { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.education p {
+    text-align: center;
+}
+
+.socialMedias {
+    margin-bottom: 0 !important;
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.instaIcon, .fbIcon {
+    fill: var(--kaki);
+    height: 55px;
+    width: 55px;
+}
+
+.instaIcon:hover, .instaIcon:focus, .fbIcon:hover, .fbIcon:focus {
+    fill: var(--accentBeige);
+}
+
+@media screen and (max-width: 1300px) {
+    .education, .socialMedias {
+        gap: 41px;
+        width: 80%;
+    }
+
+    .titleContainer { 
+        gap: 18px;
+    }
+
+    .iconsContainer {
+        gap: 90px;
+    }
+
+    .instaIcon, .fbIcon {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .titleContainer {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .education, .socialMedias {
+        gap: 37px;
+        width: 85%;
+    }
+
+    .titleContainer {
+        gap: 14px;
+    }
+
+    .iconsContainer {
+        gap: 80px;
+    }
+
+    .instaIcon, .fbIcon {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .iconsContainer {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .iconsContainer {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .education p {
+        text-align: left;
+    }
+}

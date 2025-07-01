@@ -121,15 +121,12 @@
         flex-direction: column-reverse;
     }
 
-    .titleContainer {
-        align-self: center;
-    }
-
     .infos {
         gap: 30px;
     }
 
     .titleContainer {
+        align-self: center;
         text-align: center;
         gap: 16px;
     }
