@@ -60,7 +60,7 @@ function Home() {
             <RowSection 
                 title="La réflexologie plantaire" 
                 subtitle="C'est quoi ?" 
-                text={<>La réflexologie plantaire est une pratique naturelle qui repose sur <span>la stimulation de zones réflexes</span> situées sur les pieds, <span>correspondant à différentes parties du corps</span>. En appliquant des pressions ciblées, elle favorise la détente, améliore la circulation énergétique et <span>aide à rééquilibrer l’organisme</span>. Idéale pour réduire le stress et apaiser divers maux, elle s’adresse à tous.</>} 
+                content={<p>La réflexologie plantaire est une pratique naturelle qui repose sur <span>la stimulation de zones réflexes</span> situées sur les pieds, <span>correspondant à différentes parties du corps</span>. En appliquant des pressions ciblées, elle favorise la détente, améliore la circulation énergétique et <span>aide à rééquilibrer l’organisme</span>. Idéale pour réduire le stress et apaiser divers maux, elle s’adresse à tous.</p>} 
                 ctaText="Réserver ma séance"
                 ctaLink="/prendre-rdv"
                 img={["reflexo1.jpg", "reflexo2.jpg"]}
@@ -70,7 +70,7 @@ function Home() {
                 side="reverse" 
                 title="La sophrologie" 
                 subtitle="C'est quoi ?" 
-                text={<>La sophrologie est une méthode douce qui allie techniques de <span>relaxation, respiration et visualisation positive</span> pour renforcer l’équilibre entre le corps et l’esprit. Elle aide à gérer le stress, les émotions et à développer une meilleure connaissance de soi pour <span>améliorer le bien-être au quotidien</span>. Accessible à tous, elle s'adapte aux besoins spécifiques de chacun, dans une démarche personnalisée.</>} 
+                content={<p>La sophrologie est une méthode douce qui allie techniques de <span>relaxation, respiration et visualisation positive</span> pour renforcer l’équilibre entre le corps et l’esprit. Elle aide à gérer le stress, les émotions et à développer une meilleure connaissance de soi pour <span>améliorer le bien-être au quotidien</span>. Accessible à tous, elle s'adapte aux besoins spécifiques de chacun, dans une démarche personnalisée.</p>} 
                 ctaText="Réserver ma séance"
                 ctaLink="/prendre-rdv"
                 img={["sophro1.jpg", "sophro2.jpg"]}

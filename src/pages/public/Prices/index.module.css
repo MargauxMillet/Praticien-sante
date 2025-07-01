@@ -1,3 +1,388 @@
+.intro {
+    position: relative;
+    padding-top: var(--MS);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--MM);
+    padding-bottom: calc(var(--MM) + var(--MS) + 59px);
+}
+
+.intro > p {
+    width: 75%;
+    text-align: center;
+}
+
+.locationInfos {
+    position: relative;
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+}
+
+.locationInfos > .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.locationInfos > p {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 5%;
+    color: var(--darkBeige);
+    margin: auto 0;
+    width: auto;
+}
+
+.item .icon {
+    width: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.item .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.item .infos p {
+    line-height: 1.5em;
+}
+
+.item .infos .title {
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: 5%;
+}
+
+.highlightedInfo {
+    position: absolute;
+    bottom: -59px;
+    background-color: var(--darkBeige);
+    padding: 15px;
+    border-radius: 10px;
+    width: 230px;
+}
+
+.item .infos .highlightedInfo p {
+    color: var(--kaki);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.intro .wave {
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+}
+
+.intro .wave img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1340px) {
+    .locationInfos > p {
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width: 1193px) {
+    .intro > p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .locationInfos {
+        gap: 100px;
+    }
+
+    .locationInfos > p {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro > p {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .locationInfos {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+        padding-bottom: calc(var(--MM) + var(--MS) + 50px);
+    }
+
+    .locationInfos {
+        gap: 60px;
+    }
+
+    .locationInfos > .item {
+        gap: 27px;
+    }
+
+    .item .icon {
+        width: 27px;
+        height: 31.5px;
+    }
+
+    .item .infos {
+        gap: 12px;
+        width: 190px;
+    }
+
+    .item .infos p {
+        font-size: 14px;
+    }
+
+    .item .infos .title {
+        font-size: 18px;
+    }
+
+    .highlightedInfo {
+        padding: 13px;
+        border-radius: 9px;
+        width: 196px;
+        bottom: -50px;
+    }
+
+    .item .infos .highlightedInfo p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .intro {
+        padding-bottom: calc(var(--MM) + var(--MS) + 41px);
+    }
+
+    .locationInfos {
+        gap: 40px;
+    }
+
+    .locationInfos > .item {
+        gap: 24px;
+    }
+
+    .item .icon {
+        width: 24px;
+        height: 28px;
+    }
+
+    .item .infos {
+        gap: 9px;
+        width: 170px;
+    }
+
+    .item .infos p {
+        font-size: 12px;
+    }
+
+    .item .infos .title {
+        font-size: 16px;
+    }
+
+    .locationInfos > p {
+        font-size: 24px;
+    }
+
+    .highlightedInfo {
+        bottom: -41px;
+        padding: 11px;
+        border-radius: 8px;
+        width: 164px;
+    }
+
+    .item .infos .highlightedInfo p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro {
+        padding-bottom: calc(var(--MM) + var(--MS) + 23px);
+    }
+
+    .locationInfos {
+        gap: 30px;
+    }
+
+    .locationInfos > .item {
+        gap: 21px;
+    }
+
+    .locationInfos > p {
+        font-size: 21px;
+    }
+
+    .item .icon {
+        width: 18px;
+        height: 24px;
+    }
+
+    .item .infos {
+        gap: 6px;
+        width: 150px;
+    }
+
+    .item .infos .title {
+        font-size: 14px;
+    }
+
+    .highlightedInfo {
+        bottom: -23px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .intro {
+        padding-bottom: calc(var(--MM) + var(--MS) + 38px);
+    }
+
+    .highlightedInfo {
+        width: 92px;
+        bottom: -38px;
+    }
+
+    .item .infos .highlightedInfo p {
+        line-height: 1.4em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .intro {
+        padding-bottom: calc(var(--MM) + var(--MS) + 56px);
+    }
+
+    .locationInfos > .item {
+        gap: 18px;
+    }
+
+    .item .infos {
+        width: 110px;
+    }
+
+    .highlightedInfo {
+        bottom: -56px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .locationInfos {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .item .infos {
+        width: 100px;
+    }
+}
+
+.rowSectionContainer {
+    width: 90%;
+    margin: auto;
+}
+
+.contentList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-left: 50px;
+}
+
+.contentList .item {
+    position: relative;
+}
+
+.contentList .item::before {
+    content: ' ';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.contentList .item h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contentList .item > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+.item .important {
+    color: var(--kaki);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+    .contentList {
+        gap: 31px;
+        padding-left: 45px; 
+    }
+
+    .contentList .item > div {
+        gap: 12.5px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contentList {
+        gap: 27px;
+        padding-left: 40px; 
+        /* width: 85%; */
+    }
+
+    .contentList .item > div {
+        gap: 10px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contentList {
+        padding-left: 0; 
+    }
+
+    .contentList .item > div {
+        gap: 5px;
+        padding-left: 20px;
+    }
+}
+
 .br::after {
     display: inline !important;
 }

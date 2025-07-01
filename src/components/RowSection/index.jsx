@@ -4,7 +4,7 @@ import GetImgURL from '../../utils/imgUrl'
 import { useContext, useEffect, useRef, useState } from 'react';
 import { WindowContext } from '../../context';
 
-function RowSection ({side = 'classic', title, subtitle, text, ctaText = null, ctaLink = null, img}) {
+function RowSection ({side = 'classic', title, subtitle, content, ctaText = null, ctaLink = null, img, position = null}) {
     const { windowWidth } = useContext(WindowContext)
     const [carouselItemActive, setCarouselItemActive] = useState(0)
     const [carouselCurrentLeft, setCarouselCurrentLeft] = useState(0)
@@ -70,15 +70,13 @@ function RowSection ({side = 'classic', title, subtitle, text, ctaText = null, c
     
     
     return (
-        <div className={`bloc ${style.container} ${side == 'reverse' ? style.reverse : ''}`} ref={carouselRef}>
+        <div className={`bloc ${style.container} ${side == 'reverse' ? style.reverse : ''} ${position == "first" ? style.first : ""} ${position == "last" ? style.last : ""}`} ref={carouselRef}>
             <div className={style.infos}>
                 <div className={style.titleContainer}>
                     <h3 className={`title`}>{title}</h3>
-                    <h4 className={`subtitle`}>{subtitle}</h4>
+                    {subtitle && <h4 className={`subtitle`}>{subtitle}</h4>}
                 </div>
-                <div>
-                    <p>{text}</p>
-                </div>
+                <div>{content}</div>
                 {ctaText && <Link to={ctaLink} className={`button ${style.cta}`}>{ctaText}</Link>}
             </div>
             <div>

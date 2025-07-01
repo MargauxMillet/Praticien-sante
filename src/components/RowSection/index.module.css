@@ -5,6 +5,14 @@
     gap: 80px;
 }
 
+.first {
+    margin-top: var(--MS) !important;
+}
+
+.last {
+    margin-bottom: 0 !important;
+}
+
 .reverse {
     flex-direction: row-reverse;
 }
@@ -15,6 +23,7 @@
     flex-direction: column;
     align-items: baseline;
     gap: 40px;
+    width: 100%;
 }
 
 .titleContainer { 
@@ -112,8 +121,8 @@
         flex-direction: column-reverse;
     }
 
-    .infos, .titleContainer {
-        align-items: center;
+    .titleContainer {
+        align-self: center;
     }
 
     .infos {
